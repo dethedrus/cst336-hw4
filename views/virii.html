@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+    
+    <body>
+        <header>
+            <h1>Bad Actors in the Computing Wild West</h1>
+        </header>
+
+        <hr>
+        <br />
+        <nav>
+            <a href="/">Home</a>
+            <a href="/virii" style="color:#1e90ff;"><strong>Virii</strong></a>
+            <a href="/antivirus">Anti Virus</a>
+            <a href="/malware">Malware</a>
+        </nav>
+        
+        <main>
+            <figure>
+                <img src="/img/virus.jpg" alt="Lots of random hex">
+                <figcaption><em>Fear the dreaded <%- fakeVirus %> virus!</em></figcaption>
+            </figure>
+            
+            <div>
+                <h3><u><strong>Virii In The Wild</strong></u></h3>
+                <p>Most well known worms were harmless "pranks" or proofs of concept throughout the 70s and early 80s. The term virus wasn't even used to refer to these until 1983 when <b><a href="http://all.net/resume/bio.html">Frederick B. Cohen</a></b>  coined the term "computer virus", referring to "a program that can 'infect' other programs by modifying them to include a possibly evolved copy of itself".</p>
+                <p>The first PC compatible virus, <b><a href="https://www.theregister.com/2006/01/19/pc_virus_at_20/">Brain</a></b>, was unleashed in 1986. A boot sector virus, it spread via infected floppies. It isn't considered to have been particularly harmful, but the floodgates had been opened.</p>
+                <p>The <b><a href="https://www.trendmicro.com/vinfo/us/threat-encyclopedia/archive/malware/JERUSALEM">Jerusalem virus</a></b> was one of the first damaging and widespread virii, only activating on Friday 13th of all years past its release in 1987. It deleted programs run on that day as well as infecting other EXE files to grow too large to run on the affected computer.</p>
+            </div>
+        </main>
+
+<%- include('partials/footer.ejs') %>
